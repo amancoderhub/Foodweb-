@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JTGEats</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+    <header class="header" id="home">
+    <div class="container header__wrapper">
+        <div class="logo">
+        <img src="assets/image/jtgeats-logo.png" alt="JTGEats Logo">
+        </div>
+
+        <nav class="nav">
+        <ul class="nav__list">
+            <li><a href="#" data-scroll="home">Home</a></li>
+            <li><a href="#" data-scroll="about">About</a></li>
+            <li><a href="#" data-scroll="menu">Menu</a></li>
+            <li><a href="#" data-scroll="blog">Blog</a></li>
+            <li><a href="#" data-scroll="contact">Contact</a></li>
+        </ul>
+        </nav>
+
+        <div class="header__icons">
+        <button class="icon-btn search"></button>
+        <button class="icon-btn cart"></button>
+        </div>
+
+        <button class="menu-toggle" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+        </button>
+    </div>
+    </header>
+
+    <section class="hero" id="about">
+    <div class="container hero__wrapper">
+        <div class="hero__content">
+        <h1>Authentic Home food in India</h1>
+        <p>JTGEats is a courier service in which authentic home cooked food is delivered.</p>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search food you love">
+            <button>Search</button>
+        </div>
+        </div>
+
+        <div class="hero__image">
+        <img src="assets/icons/cuate.svg" alt="Chef illustration">
+        </div>
+    </div>
+    </section>
+
+    <section class="home-kitchen" id="menu">
+    <div class="container">
+        <h2>Home Kitchen</h2>
+        <div class="food-grid" id="foodGrid"></div>
+    </div>
+    </section>
+
+    <section class="popular-inline">
+    <h2>Popular Items</h2>
+
+    <div class="popular-carousel" id="popularCarousel" aria-label="Popular items carousel">
+
+        <button class="carousel-btn prev" aria-label="Previous item">
+        <img src="assets/icons/arrow-left.svg" alt="">
+        </button>
+
+        <div class="popular-viewport">
+        <div class="popular-track" id="popularTrack"></div>
+        </div>
+
+        <button class="carousel-btn next" aria-label="Next item">
+        <img src="assets/icons/arrow-right.png" alt="">
+        </button>
+
+    </div>
+
+    <button class="request-btn" id="requestDishBtn">Request a Dish</button>
+    </section>
+
+    <section class="service-section" id="blog">
+    <div class="service-bg"></div>
+
+    <div class="service-container">
+        <h2>
+        We are providing best <br />
+        home cooked food delivery service.
+        </h2>
+
+        <p class="service-text">
+        Away from home and craving the tasty homemade recipes?
+        <span>Choose from a selection of our delicious home cooked dishes.</span>
+        </p>
+
+        <div class="video-wrapper">
+        <video
+            id="serviceVideo"
+            src="assets/video/food.mp4"
+            poster="assets/image/video-thumbnail.png"
+        ></video>
+
+        <button id="videoPlayBtn" class="video-play-btn"></button>
+        </div>
+    </div>
+    </section>
+
+    <section class="contact-section">
+    <div class="container contact-grid">
+
+        <div class="contact-form">
+        <h3>Do you have a question<br>or want to become a seller?</h3>
+        <p>Fill this form and our manager will contact you next 48 hours.</p>
+
+        <form class="contact-box">
+            <div class="form-row">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your e-mail">
+            </div>
+
+            <textarea placeholder="Your message"></textarea>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        </div>
+
+        <div class="contact-image">
+        <img src="assets/image/delivery-boy.svg" alt="Delivery">
+        </div>
+
+    </div>
+    </section>
+
+    <footer class="footer">
+    <div class="container footer-inner">
+        <div class="footer-logo">
+        <img src="assets/image/jtgeats-logo.png" alt="JTGEats Logo">
+        </div>
+
+        <ul class="footer-links">
+        <li><a href="#" data-scroll="home">Home</a></li>
+        <li><a href="#" data-scroll="about">About</a></li>
+        <li><a href="#" data-scroll="menu">Menu</a></li>
+        <li><a href="#" data-scroll="blog">Blog</a></li>
+        <li><a href="#" data-scroll="contact">Contact</a></li>
+        </ul>
+
+        <div class="footer-socials">
+        <img src="assets/icons/facebook.png" alt="Facebook">
+        <img src="assets/icons/instagram.png" alt="Instagram">
+        </div>
+    </div>
+    </footer>
+
+    <div id="modal" class="modal hidden">
+    <div class="modal-overlay"></div>
+
+    <div class="modal-box">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <h3>Request a Dish</h3>
+        <p>Fill the form and we’ll get back to you.</p>
+
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Dish details"></textarea>
+
+        <div class="modal-actions">
+        <button class="cancel-btn">Cancel</button>
+        <button class="submit-btn">Submit Request</button>
+        </div>
+    </div>
+</div>
+
+<script type="module" src="js/main.js"></script>
+
+</body>
+</html>
